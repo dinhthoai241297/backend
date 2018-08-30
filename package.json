@@ -24,6 +24,7 @@
         "babel-polyfill": "6.8.0",
         "bootstrap": "3.3.6",
         "jquery": "2.2.3",
+        "prop-types": "^15.6.2",
         "react": "15.0.2",
         "react-dom": "15.0.2",
         "react-redux": "4.4.5",
@@ -31,6 +32,7 @@
         "react-router-redux": "4.0.4",
         "redux": "3.5.2",
         "redux-thunk": "2.0.1",
+        "superagent": "^3.8.3",
         "toastr": "2.1.2"
     },
     "devDependencies": {
