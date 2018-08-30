@@ -5,7 +5,7 @@ export const getAllSector = (page) => {
     return dispatch => {
         return sectorApi.getAll(page).end((err, data) => {
             if (err) {
-                // need more process
+                // need more handling
                 throw(err);
             } else {
                 dispatch(loadAllSectorSuccess(JSON.parse(data.text).data.list));

@@ -2,24 +2,24 @@ import request from 'superagent';
 import { HOST } from './../contants/index';
 
 class SectorApi {
-    static add() {
-
+    static add(data) {
+        return request.post(`${HOST}sector/add`).send({ data });
     }
 
-    static update() {
-
+    static update(data) {
+        return request.post(`${HOST}sector/update`).send({ data });
     }
 
-    static delete() {
-
+    static delete(id = -1) {
+        return request.post(`${HOST}sector/delete`).send({ id });
     }
 
     static getAll(page = 1) {
-        return request.post(`${HOST}sector/getAll`).send({ page: page });
+        return request.post(`${HOST}sector/getAll`).send({ page });
     }
 
     static getOne(id = -1) {
-        return request.post(`${HOST}sector/getOne`).send({ id: id });
+        return request.post(`${HOST}sector/getOne`).send({ id });
     }
 }
 
