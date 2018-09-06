@@ -1,24 +1,25 @@
 import request from 'superagent';
+import { HOST } from './../contants/index';
 
 class MajorApi {
-    static add() {
-
+    static add(data) {
+        return request.post(`${HOST}major/add`).send({ data });
     }
 
-    static update() {
-
+    static update(data) {
+        return request.post(`${HOST}major/update`).send({ data });
     }
 
-    static delete() {
-
+    static delete(id = -1) {
+        return request.post(`${HOST}major/delete`).send({ id });
     }
 
-    static getAll() {
-
+    static getAll(page = 1) {
+        return request.post(`${HOST}major/getAll`).send({ page });
     }
 
-    static getOne() {
-
+    static getOne(id = -1) {
+        return request.post(`${HOST}major/getOne`).send({ id });
     }
 }
 
