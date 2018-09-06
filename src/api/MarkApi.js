@@ -14,11 +14,11 @@ class MarkApi {
         return request.post(`${HOST}mark/delete`).send({ id });
     }
 
-    static getAll(page = 1) {
+    static getall(page = 1) {
         return request.post(`${HOST}mark/getAll`).send({ page });
     }
 
-    static getOne(id = -1) {
+    static getone(id = -1) {
         return request.post(`${HOST}mark/getOne`).send({ id });
     }
 }
