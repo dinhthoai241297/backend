@@ -1,3 +1,4 @@
-export const GET_ALL = 'GET_ALL';
-export const GET_ONE = 'GET_ONE';
-export const LOAD_ALL_SECTOR_SUCCESS = 'LOAD_ALL_SECTOR_SUCCESS';
+export const LOAD_ALL_SECTOR = 'LOAD_ALL_SECTOR';
+export const DELETE_SECTOR = 'DELETE_SECTOR';
+export const ADD_SECTOR = 'ADD_SECTOR';
+export const UPDATE_SECTOR = 'UPDATE_SECTOR';

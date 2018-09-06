@@ -15,11 +15,11 @@ class SubjectApi {
     }
 
     static getAll(page = 1) {
-        return request.post(`${HOST}subject/getAll`).send({ page });
+        return request.post(`${HOST}subject/getall`).send({ page });
     }
 
     static getOne(id = -1) {
-        return request.post(`${HOST}subject/getOne`).send({ id });
+        return request.post(`${HOST}subject/getone`).send({ id });
     }
 }
 

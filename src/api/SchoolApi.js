@@ -15,11 +15,11 @@ class SchoolApi {
     }
 
     static getAll(page = 1) {
-        return request.post(`${HOST}school/getAll`).send({ page });
+        return request.post(`${HOST}school/getall`).send({ page });
     }
 
     static getOne(id = -1) {
-        return request.post(`${HOST}school/getOne`).send({ id });
+        return request.post(`${HOST}school/getone`).send({ id });
     }
 }
 
