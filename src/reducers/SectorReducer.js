@@ -1,4 +1,4 @@
-import * as actionTypes from "./../actionTypes/SectorActionTypes";
+import * as actionTypes from './../actionTypes/SectorActionTypes';
 
 let initState = [];
 

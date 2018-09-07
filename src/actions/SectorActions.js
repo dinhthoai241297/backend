@@ -59,7 +59,7 @@ export const loadAllSectorApi = page => {
             //
             throw (error);
         } else {
-            dispatch();
+            dispatch(loadAllSectorState(JSON.parse(data.text).data.list));
         }
     });
 };
